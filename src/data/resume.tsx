@@ -1,39 +1,73 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+const skills = [
+  "PHP",
+  "Laravel",
+  "FailmentPHP",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Nuxt.js",
+  "Vue.js",
+  "Node.js",
+  "NestJS",
+  "MySQL",
+  "MongoDB",
+  "PostgreSQL",
+  "TailwindCSS",
+  "Docker",
+  "AWS",
+  "CI/CD",
+];
+
 export const DATA = {
   name: "Ahmed Mamdouh",
   role: "Senior Software Engineer",
   initials: "AM",
-  url: "https://xerk.io",
+  url: "https://www.xerk.io",
   location: "6th Of October, Egypt",
   locationLink: "https://www.google.com/maps/place/october-gardens",
+  title: "Ahmed Mamdouh - Senior Full Stack Engineer | TypeScript, Next.js, Laravel Expert",
   description: 
-    "Senior Full Stack Engineer with 8+ years of experience. Expert in TypeScript, Next.js, Nuxt.JS, Laravel, and Node.js. Building scalable web applications and mentoring teams.",
+    "Senior Full Stack Engineer with 8+ years of experience in TypeScript, Next.js, Laravel, and Node.js. Expert in building scalable web applications, SaaS platforms, and mentoring teams.",
   summary: 
-    "I am a Software Engineer with extensive experience in both front-end and back-end development. I've developed numerous websites, web apps, and integrated various payment systems. My expertise spans PHP, Laravel, NestJS, Node.js, React, and Next.js. I've created multiple eCommerce platforms, Learning Management Systems (LMS), School Management Systems (SMS), and SaaS applications. I have a strong track record of developing payment systems and building APIs from scratch.",
+    "Experienced Full Stack Engineer specializing in modern web technologies. Expert in building scalable applications using TypeScript, Next.js, Laravel, and Node.js. Proven track record in developing enterprise-level SaaS platforms, e-commerce solutions, and complex APIs. Strong focus on performance optimization and clean code architecture.",
+  metaKeywords: [
+    // Primary Keywords
+    "Full Stack Developer",
+    "Senior Software Engineer",
+    "Web Developer",
+    "Software Architect",
+    // Technical Skills
+    "TypeScript Development",
+    "Next.js Expert",
+    "Laravel Development",
+    "Node.js Development",
+    "React Applications",
+    "Vue.js Development",
+    // Expertise Areas
+    "API Development",
+    "SaaS Development",
+    "E-commerce Solutions",
+    "Web Application Architecture",
+    "Database Design",
+    "Cloud Infrastructure",
+    // Technologies
+    ...skills,
+    // Location
+    "Egypt Developer",
+    "Remote Engineer",
+    // Services
+    "Web Development Services",
+    "Technical Consultation",
+    "Team Leadership",
+    "Software Architecture",
+  ],
   avatarUrl: "/profile.png",
   resumeUrl: "https://ggl.link/xerk-cv",
-  skills: [
-    "PHP",
-    "Laravel",
-    "FailmentPHP",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Nuxt.js",
-    "Vue.js",
-    "Node.js",
-    "NestJS",
-    "MySQL",
-    "MongoDB",
-    "PostgreSQL",
-    "TailwindCSS",
-    "Docker",
-    "AWS",
-    "CI/CD",
-  ],
+  skills,
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },

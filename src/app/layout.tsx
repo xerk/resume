@@ -15,22 +15,11 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: `${DATA.name} | ${DATA.role}`,
+    default: DATA.title,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
-  keywords: [
-    "Ahmed Mamdouh",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Laravel",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Vue.js",
-    "React",
-    ...DATA.skills
-  ],
+  keywords: DATA.metaKeywords,
   authors: [{ name: DATA.name, url: DATA.url }],
   creator: DATA.name,
   openGraph: {
@@ -38,14 +27,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: DATA.url,
     siteName: DATA.name,
-    title: `${DATA.name} | ${DATA.role}`,
+    title: DATA.title,
     description: DATA.description,
     images: [
       {
         url: `${DATA.url}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: DATA.name,
+        alt: DATA.title,
       }
     ],
   },
@@ -62,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${DATA.name} | ${DATA.role}`,
+    title: DATA.title,
     description: DATA.description,
     creator: "@xerk",
     images: [`${DATA.url}/og-image.png`],
