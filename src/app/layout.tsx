@@ -34,10 +34,12 @@ export const metadata: Metadata = {
   authors: [{ name: DATA.name, url: DATA.url }],
   creator: DATA.name,
   openGraph: {
-    title: `${DATA.name} | ${DATA.role}`,
-    description: DATA.description,
+    type: "website",
+    locale: "en_US",
     url: DATA.url,
     siteName: DATA.name,
+    title: `${DATA.name} | ${DATA.role}`,
+    description: DATA.description,
     images: [
       {
         url: `${DATA.url}/og-image.png`,
@@ -46,8 +48,6 @@ export const metadata: Metadata = {
         alt: DATA.name,
       }
     ],
-    locale: "en_US",
-    type: "website",
   },
   robots: {
     index: true,
